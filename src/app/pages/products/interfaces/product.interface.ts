@@ -7,7 +7,7 @@ export interface Product {
     stock: number
 }
 
-// Abaxo um exemplo dos dados que tem na tabela de produtos
+// Abaixo um exemplo dos dados que tem na tabela de produtos
 
 // "id": 1,
 // "name": "Essential TypeScript 4: From Beginner to Pro",

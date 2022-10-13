@@ -1,3 +1,4 @@
+import { Product } from './interfaces/product.interface';
 import { Component, OnInit } from '@angular/core';
 import { tap } from 'rxjs';
 import { ProductsService } from './services/products.service';
@@ -10,18 +11,18 @@ import { ProductsService } from './services/products.service';
 export class ProductsComponent implements OnInit {
 
   constructor(private productsService: ProductsService) { }
+  products: Product[] = [];
 
-  ngOnInit(): void {
-    this.getProducts();
-  }
-
-  getProducts(): void {
+  ngOnInit() {
+    // carrega os produtos da API pelo service de produtos
     this.productsService
       .getProducts()
-      .pipe(
-        tap( res => console.log(res))
-      )
-      .subscribe();
+      .subscribe((products: Product[]) => this.products = products);
+  }
+
+  // Evento do click dentro da função vinda do componente filho
+  addToCart(product: Product): void {
+    console.log('Add to Cart');
   }
 
 }
