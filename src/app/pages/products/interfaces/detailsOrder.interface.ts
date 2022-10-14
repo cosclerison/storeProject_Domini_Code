@@ -1,4 +1,4 @@
-export interface Product {
+export interface DetailOrder {
     id: number,
     orderId: number,
     quantity: number,

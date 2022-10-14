@@ -1,4 +1,4 @@
-export interface Product {
+export interface Order {
     id: number,
     name: string,
     date: string,
