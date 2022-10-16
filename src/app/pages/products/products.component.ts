@@ -6,7 +6,14 @@ import { ProductsService } from './services/products.service';
 
 @Component({
   selector: 'app-products',
-  templateUrl: './products.component.html',
+  template: `
+    <section class="products">
+      <app-product
+      (addToCartClick)="addToCart($event)"
+        [product]="product" 
+        *ngFor="let product of products">
+      </app-product>
+    </section>`,
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {

@@ -1,25 +1,25 @@
+import { MaterialModule } from 'src/app/material.module';
+import { CartCompnent } from './shared/components/cart/cart.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './shared/header/header.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './shared/components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
     HeaderComponent,
+    AppComponent,
+    CartCompnent
   ],
   imports: [
     BrowserModule,
-    MatToolbarModule,
-    MatCardModule,
+    MaterialModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule
