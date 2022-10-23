@@ -14,7 +14,7 @@ import { Component } from "@angular/core";
   `,
 })
 
-export class CartCompnent {
+export class CartCompnent{
   quantity$ = this.shoppingCartService.quantityAction$;
   total$ = this.shoppingCartService.totalAction$;
   cart$ = this.shoppingCartService.cartAction$;
