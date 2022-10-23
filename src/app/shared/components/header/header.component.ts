@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,11 @@ import { Component } from '@angular/core';
   template: `
     <mat-toolbar color="primary">
       <mat-toolbar-row>
-        <span>My Store</span>
+        <a [routerLink]="['/']">
+          <span>My Store</span>
+        </a>
         <span class="spacer"></span>
-        <app-cart></app-cart>
+        <app-cart class="mouseHover" (click)="goToCheckout()"></app-cart>
       </mat-toolbar-row>
     </mat-toolbar>
   `,
@@ -16,6 +19,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  constructor( ) {}
+  constructor(
+    private router: Router
+  ) {}
 
- }
+  goToCheckout(){
+    this.router.navigate(['/checkout']);
+  }
+
+}
