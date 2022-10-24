@@ -5,6 +5,7 @@ export interface Product {
     description: string,
     category: number,
     stock: number
+    qty: number
 }
 
 // Abaixo um exemplo dos dados que tem na tabela de produtos
