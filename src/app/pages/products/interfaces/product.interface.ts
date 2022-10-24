@@ -16,3 +16,4 @@ export interface Product {
 // "description": "Learn the essentials and more of TypeScript, a popular superset of the JavaScript language that adds support for static typing. TypeScript combines the typing features of C# or Java.",
 // "categoryId": 1,
 // "stock": 0
+// qty: 123

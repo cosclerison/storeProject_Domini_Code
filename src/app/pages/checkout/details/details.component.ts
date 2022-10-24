@@ -15,6 +15,6 @@ export class DetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }
