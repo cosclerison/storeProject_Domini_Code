@@ -1,9 +1,18 @@
+import { Details } from "./order.interface";
 export interface DetailOrder {
-    id: number,
-    orderId: number,
-    quantity: number,
-    productName: string,
-}
+        details: Details[];
+        orderId: number;
+    }
+
+
+/////////////////////////
+
+// export interface DetailOrder {
+//     id: number,
+//     orderId: number,
+//     quantity: number,
+//     productName: string,
+// }
 
 // Abaixo um exemplo dos dados que tem na tabela de produtos
 
