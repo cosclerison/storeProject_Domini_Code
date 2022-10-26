@@ -16,6 +16,8 @@ export class CheckoutComponent implements OnInit {
     city: ''
   };
 
+  isDelivery = false;
+
   stores: Store[] = []
 
   constructor(
@@ -27,18 +29,14 @@ export class CheckoutComponent implements OnInit {
   }
 
   onPickupOrderDelivery(value:boolean): void {
-    console.log(value)
-  }
-
-  onOrderDelivery(value:boolean): void {
-    console.log(value)
+    this.isDelivery = value;
   }
 
   onSubmit() {
     console.log('Caixa')
   }
 
-  getStores(): void{
+  private getStores(): void{
     this.dataService
     .getStores()
     .pipe(
