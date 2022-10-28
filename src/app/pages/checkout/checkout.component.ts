@@ -1,3 +1,4 @@
+import { ProductsService } from './../products/services/products.service';
 import { Router } from '@angular/router';
 import { ShoppingCartService } from './../../shared/services/shopping-cart.service';
 import { Details, Order } from '../products/interfaces/order.interface';
@@ -27,6 +28,7 @@ export class CheckoutComponent implements OnInit {
 
   constructor(
     private shoppingCartService: ShoppingCartService,
+    private productsService: ProductsService,
     private dataService: DataService,
     private router: Router
   ) { }
@@ -77,12 +79,10 @@ export class CheckoutComponent implements OnInit {
   private prepareDetails(): Details[]{
     const details: Details[] = [];
     this.cart.forEach((product: Product) => {
-      const { 
-        id:productId, 
-        name: productName, 
-        qty: quantity, 
-        stock
-      } = product;
+      const { id:productId, name: productName, qty: quantity, stock } = product;
+      const updateStock = (stock - quantity);
+
+
       details.push( {productId, productName, quantity })
       
     })
