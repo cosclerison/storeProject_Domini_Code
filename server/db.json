@@ -160,6 +160,19 @@
       "date": "10/28/2022",
       "pickup": false,
       "id": 5
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 3,
+        "name": "Chambers and West Broadway",
+        "address": "125 Chambers Street",
+        "city": "New York",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 6
     }
   ],
   "detailsOrders": [
@@ -189,6 +202,11 @@
       ],
       "orderId": 5,
       "id": 3
+    },
+    {
+      "details": [],
+      "orderId": 6,
+      "id": 4
     }
   ]
 }

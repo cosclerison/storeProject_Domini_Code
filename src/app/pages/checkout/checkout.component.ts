@@ -5,7 +5,7 @@ import { DataService } from './../../shared/services/data.service';
 import { Store } from './../products/interfaces/store.interface';
 import { Product } from '../products/interfaces/product.interface';
 import { Component, OnInit } from '@angular/core';
-import { switchMap, tap } from 'rxjs/operators';
+import { delay, switchMap, tap } from 'rxjs/operators';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -55,8 +55,9 @@ export class CheckoutComponent implements OnInit {
         const details = this.prepareDetails();
         return this.dataService.saveDetailsOrder({ details, orderId });
       }),
-      tap(() => this.router.navigate(['/thank-you-page'])),
-    )
+      tap(() => this.router.navigate(['/checkout/thank-you-page'])),
+      delay(2000),
+      tap(() => this.shoppingCartService.resetCart()))
     .subscribe();
   }
 
