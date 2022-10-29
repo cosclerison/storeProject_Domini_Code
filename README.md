@@ -1,5 +1,13 @@
 # StoreProject
 
+Neste projeto usei uma API local. para subir a API segue o comando
+`npm run serverAPI`
+
+para subir o projeto usar o comando padrão
+###### Finalizado de acordo com o curso disponibilizado
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
 ## Development server
