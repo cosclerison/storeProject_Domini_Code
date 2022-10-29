@@ -80,8 +80,13 @@ export class CheckoutComponent implements OnInit {
     const details: Details[] = [];
     this.cart.forEach((product: Product) => {
       const { id:productId, name: productName, qty: quantity, stock } = product;
-      const updateStock = (stock - quantity);
+      const updateQtyStock = (stock - quantity);
 
+      this.productsService.updateStock(productId, updateQtyStock)
+      .pipe(
+        tap(() => details.push({productId, productName, quantity}))
+      )
+      .subscribe();
 
       details.push( {productId, productName, quantity })
       

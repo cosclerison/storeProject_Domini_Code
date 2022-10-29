@@ -57,16 +57,16 @@
       "price": 45,
       "description": "Learn the essentials and more of TypeScript, a popular superset of the JavaScript language that adds support for static typing. TypeScript combines the typing features of C# or Java.",
       "categoryId": 1,
-      "stock": 5
-    },
+      "stock": 2
+        },
     {
       "id": 2,
       "name": "Hackeando el cerebro de tus compradores: PsychoGrowth",
       "price": 5,
       "description": "En Hackeando del cerebro de tus compradores, Corti nos revela cómo muchas compañías crean productos digitales o procesos de venta capaces de conectar con la psicología del comprador.",
       "categoryId": 1,
-      "stock": 8
-    },
+      "stock": 2
+        },
     {
       "id": 3,
       "name": "Angular Routing: Learn To Create client-side and SPA with Routing and Navigation",
@@ -74,14 +74,15 @@
       "description": "In this book, the reader will be able to focus on one concept of Angular in deep.",
       "categoryId": 1,
       "stock": 2
-    },
+        },
     {
       "id": 4,
       "name": "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter",
       "price": 19,
       "description": "Ideal for Android smartphones and tablets, and MIL cameras. SanDisk Memory Zone app for easy file management (Download and Installation Required).",
       "categoryId": 2,
-      "stock": 10
+      "stock": 2
+      
     },
     {
       "id": 5,
@@ -90,14 +91,15 @@
       "description": "5K Video - Shoot stunning video with up to 5K resolution, perfect for maintaining detail even when zooming in",
       "categoryId": 2,
       "stock": 2
-    },
+        },
     {
       "id": 6,
       "name": "CL3 Rated High-Speed 4K HDMI Cable - 6 Feet",
       "price": 7,
       "description": "HDMI A Male to A Male Cable: Supports Ethernet, 3D, 4K video and Audio Return Channel (ARC)",
       "categoryId": 2,
-      "stock": 10
+      "stock": 2
+      
     },
     {
       "id": 7,
@@ -105,7 +107,8 @@
       "price": 32,
       "description": "The USB receiver is conveniently located in the box, top flap. This wireless keyboard and mouse feature Logitech Advanced 2.4GHz technology with a range of up to 10 metres.",
       "categoryId": 3,
-      "stock": 10
+      "stock": 2
+      
     },
     {
       "id": 8,
@@ -113,8 +116,8 @@
       "price": 20,
       "description": "Plug & play. Easy to use,powered by USB port. No external driver and Power needed. Just plug it into your USB port and the DVD driver will be detected",
       "categoryId": 3,
-      "stock": 9
-    }
+      "stock": 2
+        }
   ],
   "orders": [
     {
@@ -264,6 +267,86 @@
       "date": "10/28/2022",
       "pickup": false,
       "id": 13
+    },
+    {
+      "name": "Juliana",
+      "store": {
+        "id": 3,
+        "name": "Chambers and West Broadway",
+        "address": "125 Chambers Street",
+        "city": "New York",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "shippingAddress": "Santa monica",
+      "city": "Suzano",
+      "date": "10/28/2022",
+      "pickup": true,
+      "id": 14
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 5,
+        "name": "Monmouth St",
+        "address": "11 Monmouth Street",
+        "city": "London",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 15
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 5,
+        "name": "Monmouth St",
+        "address": "11 Monmouth Street",
+        "city": "London",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 16
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 17
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 18
+    },
+    {
+      "name": "Clerison",
+      "store": {
+        "id": 2,
+        "name": "Store Alcalá",
+        "address": "Calle de Alcalá, 21",
+        "city": "Madrid",
+        "openingHours": "10:00 - 14:00 and 17:00 - 20:30"
+      },
+      "date": "10/28/2022",
+      "pickup": false,
+      "id": 19
     }
   ],
   "detailsOrders": [
@@ -339,6 +422,82 @@
       ],
       "orderId": 13,
       "id": 11
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        }
+      ],
+      "orderId": 14,
+      "id": 12
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        }
+      ],
+      "orderId": 15,
+      "id": 13
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 1
+        },
+        {
+          "productId": 5,
+          "productName": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
+          "quantity": 2
+        }
+      ],
+      "orderId": 16,
+      "id": 14
+    },
+    {
+      "details": [
+        {
+          "productId": 1,
+          "productName": "Essential TypeScript 4: From Beginner to Pro",
+          "quantity": 2
+        },
+        {
+          "productId": 5,
+          "productName": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
+          "quantity": 2
+        }
+      ],
+      "orderId": 17,
+      "id": 15
+    },
+    {
+      "details": [
+        {
+          "productId": 5,
+          "productName": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
+          "quantity": 1
+        }
+      ],
+      "orderId": 18,
+      "id": 16
+    },
+    {
+      "details": [
+        {
+          "productId": 5,
+          "productName": "GoPro HERO9 Black - Waterproof Action Camera with Front LCD",
+          "quantity": 2
+        }
+      ],
+      "orderId": 19,
+      "id": 17
     }
   ]
 }
